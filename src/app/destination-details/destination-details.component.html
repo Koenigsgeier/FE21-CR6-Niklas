@@ -1,0 +1,11 @@
+<h2>Destination Details</h2>
+
+<div *ngIf="destination">
+    <h3>{{ destination.name }}</h3>
+    <h4>{{ destination.price | currency }}</h4>
+    <p>{{ destination.description }}</p>
+    <p>{{ destination.beginning }}</p>
+    <p>{{ destination.duration }}</p>
+
+    <button (click)="addToCart(destination)">Buy</button>
+</div>
