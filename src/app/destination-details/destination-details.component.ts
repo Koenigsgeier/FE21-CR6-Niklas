@@ -22,8 +22,9 @@ export class DestinationDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      let id: any = params.get('destinationId');
-      this.destination = destinations[id];
+      let Id: any = params.get('Id');
+      this.destination = destinations[Id];
+      console.log(Id)
     });
   }
 

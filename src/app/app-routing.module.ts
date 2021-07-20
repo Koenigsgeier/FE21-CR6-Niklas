@@ -7,9 +7,9 @@ import { BlogComponent } from './blog/blog.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 const routes: Routes = [
   {
-    path: "home", component: DestinationListComponent
+    path: "", component: DestinationListComponent
   }, {
-    path: 'destinations/:destinationId', component: DestinationDetailsComponent
+    path: 'destinations/:Id', component: DestinationDetailsComponent
   }, {
     path: 'cart', component: CartComponent
   }, {
